@@ -1,12 +1,15 @@
-altura = 0
-print("Introduce un número para hacer una figura de asteriscos de la altura elegida:")
-altura = int(input())
+altura = 5
 espacio = 0
-for i in range ():
-    print("")
-
-for j in range (1,altura+1):
-    print(" "*j+"*"+" "*altura+"*")
-    altura-=1
-
-print(" "*j+" *")
+for i in range (0,altura):
+    espacio=altura-i
+    if i == 0:
+        print(" "*altura+" *")
+    else:
+        print(" "*espacio+"*"+" "*i+"*")
+for j in range (0,altura):
+    espacio=altura-j
+    if espacio == 0:
+        print(" "*j+"*")
+    else:
+        print(" "*j+"*"+" "*espacio+"*")
+print(" "*(altura+1)+"*")
